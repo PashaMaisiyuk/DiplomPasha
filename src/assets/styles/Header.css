@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-logo {
+    /* Ваши стили для текста "Bookstore" */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.header-logo:hover {
+    /* Ваши стили для текста "Bookstore" при наведении */
+    color: #555; /* Изменение цвета при наведении */
+}
+
+.header-search-container {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-search {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Расстояние между иконками */
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

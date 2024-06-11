@@ -1,0 +1,28 @@
+.cart-page {
+    padding: 20px;
+}
+
+.cart-page h2 {
+    margin-bottom: 20px;
+}
+
+.cart-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-page ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-page ul li button {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+

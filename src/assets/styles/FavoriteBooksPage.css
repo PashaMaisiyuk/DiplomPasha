@@ -1,0 +1,10 @@
+.favorite-books-page {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.favorite-books-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
