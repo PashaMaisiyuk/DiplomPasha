@@ -26,7 +26,7 @@ const CartPage: React.FC = () => {
                     <ul>
                         {cartItems.map((item) => (
                             <li key={item.isbn13}>
-                                <div>{item.title} - {item.price}</div>
+                                <div> {item.image}{item.title} - {item.price}</div>
                                 <button onClick={() => handleRemoveFromCart(item.isbn13)}>Remove</button>
                             </li>
                         ))}

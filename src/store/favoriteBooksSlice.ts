@@ -15,7 +15,7 @@ interface FavoriteBooksState {
 }
 
 const initialState: FavoriteBooksState = {
-    books: [],
+    books: JSON.parse(localStorage.getItem('favoriteBooks') || '[]'),
 };
 
 const favoriteBooksSlice = createSlice({
@@ -26,10 +26,12 @@ const favoriteBooksSlice = createSlice({
             const existingBook = state.books.find(book => book.isbn13 === action.payload.isbn13);
             if (!existingBook) {
                 state.books.push(action.payload);
+                localStorage.setItem('favoriteBooks', JSON.stringify(state.books));
             }
         },
         removeFavorite: (state, action: PayloadAction<string>) => {
             state.books = state.books.filter(book => book.isbn13 !== action.payload);
+            localStorage.setItem('favoriteBooks', JSON.stringify(state.books));
         },
     },
 });

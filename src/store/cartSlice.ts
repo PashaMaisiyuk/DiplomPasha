@@ -4,6 +4,7 @@ interface Book {
     isbn13: string;
     title: string;
     price: string;
+    image: string;
 }
 
 interface CartState {
@@ -11,7 +12,7 @@ interface CartState {
 }
 
 const initialState: CartState = {
-    items: [],
+    items: JSON.parse(localStorage.getItem('cartItems') || '[]'),
 };
 
 const cartSlice = createSlice({
@@ -20,12 +21,15 @@ const cartSlice = createSlice({
     reducers: {
         addToCart: (state, action: PayloadAction<Book>) => {
             state.items.push(action.payload);
+            localStorage.setItem('cartItems', JSON.stringify(state.items));
         },
         removeFromCart: (state, action: PayloadAction<string>) => {
             state.items = state.items.filter(item => item.isbn13 !== action.payload);
+            localStorage.setItem('cartItems', JSON.stringify(state.items));
         },
         clearCart: (state) => {
             state.items = [];
+            localStorage.setItem('cartItems', '[]');
         },
     },
 });

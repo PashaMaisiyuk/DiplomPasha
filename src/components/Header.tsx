@@ -25,7 +25,7 @@ const Header: React.FC = () => {
     };
 
     const handleCartClick = () => {
-        navigate('/cart'); // Redirect to the cart page
+        navigate('/cart');
     };
 
     const handleUserClick = () => {

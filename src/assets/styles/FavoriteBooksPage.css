@@ -6,5 +6,7 @@
 .favorite-books-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap:60px;
+    margin-left: 30px;
+
 }

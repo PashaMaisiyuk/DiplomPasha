@@ -12,17 +12,15 @@
 }
 
 .header-logo {
-    /* Ваши стили для текста "Bookstore" */
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: black; /* Цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
+    color: black;
+    text-decoration: none;
 }
 
 .header-logo:hover {
-    /* Ваши стили для текста "Bookstore" при наведении */
-    color: #555; /* Изменение цвета при наведении */
+    color: #555;
 }
 
 .header-search-container {
@@ -49,7 +47,7 @@
 .header-icons {
     display: flex;
     align-items: center;
-    gap: 20px; /* Расстояние между иконками */
+    gap: 20px;
 }
 
 .header-icon {
